@@ -1,0 +1,46 @@
+// Font Family
+$baseFont:'Raleway', sans-serif;
+$secondFont:'Lora', serif;
+
+// Purples
+$firstColor: rgb(116,0,243);
+$secondColor: rgb(127,1,253);
+$thirdColor: rgb(77,21,66);
+// Pinks
+$fourthColor:rgb(219,130,170);
+$fifthColor:rgb(170,79,123);
+$sixthColor: rgb(184, 48, 66);
+// Blues
+$seventhColor: rgb(0,39,209);
+// Neutrals
+$eighthColor: rgb(255, 255, 255);
+$ninethColor: rgb(12, 6, 11);
+$tenthColor:rgb(78, 76, 78);
+
+// Font Sizes
+$biggestSize: 40px;
+$bigSize: 30px;
+$regularSize: 20px;
+$smallSize: 16px;
+$tinySize: 14px;
+
+@import "components/setup";
+@import "components/header";
+@import "components/main";
+@import "components/footer";
+@import "components/mixin";
+@import "components/mediaquery";
+
+html{
+  font-size: 62.5%;
+  font-family: $baseFont;
+}
+
+img{
+  width: 100%;
+}
+
+.wrapper{
+  width: 1080px;
+  margin: 0 auto;
+}

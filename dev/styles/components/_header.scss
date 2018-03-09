@@ -1,0 +1,60 @@
+section.heroContainer{
+    background-image: url(../../assets/alesia-kazantceva-298664-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.headerBarContainer{
+    height: 60px;
+    background: $fourthColor;
+    opacity: 0.8;
+}
+
+.headerBarBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerBar{
+    display: flex;
+    p{
+        font-size: $regularSize;
+        color: $eighthColor;
+    }
+    ul li{
+        font-size: $regularSize;
+        color: $eighthColor;
+        list-style: none;
+        display: inline-block;
+    }
+    .fa-linkedin-in,
+    .fa-twitter,
+    .fa-medium,
+    .fa-github{
+        font-size: $regularSize;
+        color:$eighthColor;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.heroText{
+    width: 300px;
+    // height: 230px;
+    border: 1px solid $eighthColor;
+    h1{
+        font-weight: 300;
+        font-size: 70px;
+        color: $eighthColor;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+    h2{
+        font-size: $bigSize;
+        color: $eighthColor;
+    }
+}
+

@@ -1,0 +1,43 @@
+
+.aboutContainer{
+    width: 75%;
+    padding: 35px 75px;
+
+    h2{
+        font-size: $bigSize;
+        text-align: center;
+        border-bottom: 1px solid $firstColor;
+    }
+    h3{
+        font-size: $regularSize;
+        text-align: center;
+    }
+    p{
+        font-size: $smallSize;
+        font-family: $secondFont;
+        line-height: 1.2;
+    }
+
+}
+.separationContainer{
+    button{
+        font-size: $regularFont;
+        background: red;
+    }
+    .verticalLine{
+        border-left: 6px solid $firstColor;
+        height: 800px;
+    }
+}
+
+.separationContainer{
+    width: 50%;
+    border: 1px solid red;
+}
+
+.projectContainer .projectBox{
+    width: 470px;
+    height: 300px;
+    border: 1px solid red;
+}
+]

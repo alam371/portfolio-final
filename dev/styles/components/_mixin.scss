@@ -1,0 +1,54 @@
+.separationContainer button{
+
+	button::before, button::after {
+				/* === we need box sizing here to be the same as the transition appear and disappear === */
+					box-sizing: inherit;
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				}
+					
+					/* === this is the code for the transition for the text in the button === */
+					 .draw{
+						transition: color 0.25s;
+					} 
+	
+					.draw::before, .draw::after {
+						border: 1px solid transparent;
+						width: 0;
+						height: 0;
+					}
+					/* === When this is code is commented out, we can really see that in fact there's another layer that is layered on the button so that we can see the transitions === */
+					/* === This is to position the transitions on top of the button === */
+					.draw::before {
+						top: 0;
+						left: 0;
+					}
+	
+					.draw::after {
+						bottom: 0;
+						right: 0;
+					}
+					/* === This is part of the button styling that we can add to the button ==== */
+					.draw:hover {
+						color: pink;
+					} 
+	
+					.draw:hover::before, .draw:hover::after {
+						width: 100%;
+						height: 100%;
+					}
+	
+					.draw:hover::before {
+						border-top-color: $fourthColor;
+						border-right-color: $fourthColor;
+						transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+					}
+	
+					.draw:hover::after {
+						border-bottom-color: $fourthColor;
+						border-left-color: $fourthColor;
+						transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+					}
+}
