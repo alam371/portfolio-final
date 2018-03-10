@@ -11,6 +11,7 @@
     h3{
         font-size: $regularSize;
         text-align: center;
+        color: $fourthColor;
     }
     p{
         font-size: $smallSize;
@@ -19,25 +20,120 @@
     }
 
 }
-.separationContainer{
-    button{
-        font-size: $regularFont;
-        background: red;
-    }
-    .verticalLine{
-        border-left: 6px solid $firstColor;
-        height: 800px;
-    }
+
+section.separationContainer{
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
 }
 
-.separationContainer{
-    width: 50%;
-    border: 1px solid red;
+.buttonBox{
+    display: flex;
+}
+
+button{
+    background: none;
+    border: 0;
+    /* === creating a box container the same size as the button === */
+    box-sizing: border-box;
+    // margin: 45px;
+    padding: 16px 65px;
+    /* === this is a box with a box shadow around it === */
+    box-shadow: inset 0 0 0 1px $firstColor;
+    color:$ninethColor;
+    font-size: $regularSize;
+    font-weight: 500;
+    /*=== we want the button to be on the bottom layer of the styling ===*/
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+button::before, button::after {
+/* === we need box sizing here to be the same as the transition appear and disappear === */
+    box-sizing: inherit;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.draw::before, .draw::after {
+    border: 1px solid transparent;
+    width: 0;
+    height: 0;
+}
+.draw::before {
+    top: 0;
+    left: 0;
+}
+
+.draw::after {
+    bottom: 0;
+    right: 0;
+}
+.draw:hover::before, .draw:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.draw:hover::before {
+    border-top-color: $fourthColor;
+    border-right-color: $fourthColor;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.draw:hover::after {
+    border-bottom-color: $fourthColor;
+    border-left-color: $fourthColor;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+.projectContainer{
+    border-left: 1px solid $firstColor;
 }
 
 .projectContainer .projectBox{
     width: 470px;
     height: 300px;
-    border: 1px solid green;
+    border: 1px solid red;
 }
-]
+
+span{
+    font-size: $tinySize;
+    border: 1px solid $fourthColor;
+    padding: 5px 35px;
+}
+
+section.projectContainer{
+    p{
+        font-family: $secondFont;
+        font-size: 20px;
+    }
+}
+
+
+// Skills Container
+.skillContainer{
+    display: flex;
+}
+.curSkillContainer{
+    p{
+        font-size: $regularSize;
+    }
+    i{
+        font-size: 85px;
+        color: $tenthColor;
+        padding: 10px 25px;
+    }
+}
+
+.learnContainer{
+    border-left: 1px solid $firstColor;
+    p{
+        font-size: $regularSize;
+    }
+    i{
+        font-size: 85px;
+        color: $tenthColor;
+        padding: 10px 25px;
+    }
+}

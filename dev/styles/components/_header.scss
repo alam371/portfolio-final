@@ -6,9 +6,10 @@ section.heroContainer{
 }
 
 .headerBarContainer{
-    height: 60px;
-    background: $fourthColor;
-    opacity: 0.8;
+    height: 57px;
+    border-bottom: 1px solid $fourthColor;
+    // background: $fourthColor;
+    // opacity: 0.8;
 }
 
 .headerBarBox{
