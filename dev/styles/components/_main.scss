@@ -1,26 +1,28 @@
-
+// ABOUT CONTAINER
 .aboutContainer{
-    width: 75%;
-    padding: 35px 75px;
-
+    padding-top: 100px;
+    max-width: 600px;
     h2{
         font-size: $bigSize;
         text-align: center;
         border-bottom: 1px solid $firstColor;
+        padding-bottom: 45px;
     }
     h3{
         font-size: $regularSize;
         text-align: center;
         color: $fourthColor;
+        line-height: 1.6;
     }
     p{
         font-size: $smallSize;
         font-family: $secondFont;
-        line-height: 1.2;
+        line-height: 1.6;
+        padding-bottom: 15px;
     }
 
 }
-
+// SEPARATION CONTAINER
 section.separationContainer{
     display: flex;
     justify-content: center;
@@ -32,6 +34,7 @@ section.separationContainer{
 }
 
 button{
+    margin-top: 40px;
     background: none;
     border: 0;
     /* === creating a box container the same size as the button === */
@@ -86,29 +89,30 @@ button::before, button::after {
     border-left-color: $fourthColor;
     transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
-
+// PORTFOLIO AND PROJECT CONTAINER
 .projectContainer{
-    border-left: 1px solid $firstColor;
+    max-width: 50%;
+    border: 1px solid $firstColor;
 }
 
 .projectContainer .projectBox{
-    width: 470px;
-    height: 300px;
-    border: 1px solid red;
+    width: 650px;
+    height: 400px;
+    border: 1px solid green;
+    margin: 15px auto;
 }
 
-span{
+.projectBox span{
     font-size: $tinySize;
     border: 1px solid $fourthColor;
     padding: 5px 35px;
 }
 
-section.projectContainer{
-    p{
+.projectBox p{
         font-family: $secondFont;
-        font-size: 20px;
+        font-size: $regularSize;
+        margin-top: 45px; 
     }
-}
 
 
 // Skills Container
@@ -135,5 +139,22 @@ section.projectContainer{
         font-size: 85px;
         color: $tenthColor;
         padding: 10px 25px;
+    }
+}
+
+.contactContainer{
+    h2{
+        font-size: $bigSize;
+        text-align: center;
+        // border-bottom: 1px solid $firstColor;
+    }
+    .fa-envelope {
+        font-size: 85px;
+        color: $fourthColor;
+        padding: 10px 25px;
+    }
+    p{
+        font-size: $regularSize;
+        text-align: center;
     }
 }

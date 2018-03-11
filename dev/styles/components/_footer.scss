@@ -1,4 +1,7 @@
 footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: $fourthColor;
 
     .fa-linkedin-in,
@@ -15,4 +18,25 @@ footer{
         font-size: $tinySize;
         text-align: center;
     }
+
+    .footerContact{
+        width: 50%;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+    ul li{
+        display: flex;
+        list-style: none;
+        color:$eighthColor;
+        font-size: $regularSize;
+        width: calc(100% / 4);
+        justify-content: center;
+    }
+
 }
