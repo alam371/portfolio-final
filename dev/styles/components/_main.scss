@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .aboutContainer{
     padding-top: 100px;
     max-width: 600px;
@@ -12,6 +13,7 @@
         border-bottom: 1px solid $firstColor;
         padding-bottom: 45px;
     }
+
     h3{
         font-size: $regularSize;
         text-align: center;

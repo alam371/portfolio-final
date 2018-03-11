@@ -20,22 +20,30 @@ section.heroContainer{
 
 .headerBar{
     display: flex;
+
     .headerLogo{
         width: 65px;
         height: 65px;
-        margin-left: 40px;
+        // margin-left: 40px;
     }
+    
     p{
         font-size: $regularSize;
         color: $eighthColor;
     }
 
+    nav{
+        margin-left: 120px;
+    }
+    
     ul{
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        padding-left: 0;
+        padding: 0;
+        margin: 0;
+        // padding-left: 0;
     }
     ul li{
         font-size: $regularSize;
@@ -52,6 +60,10 @@ section.heroContainer{
         color:$eighthColor;
         margin-left: 15px;
         margin-right: 15px;
+    }
+    a{
+        text-decoration: none;
+        color: $eighthColor;
     }
 }
 
