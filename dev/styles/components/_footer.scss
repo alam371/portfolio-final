@@ -3,7 +3,10 @@ footer{
     flex-direction: column;
     align-items: center;
     background: $fourthColor;
-
+    
+    .footerIcon{
+        margin: 45px 0px;
+    }
     .fa-linkedin-in,
     .fa-twitter,
     .fa-medium,
@@ -17,10 +20,12 @@ footer{
         color: $eighthColor;
         font-size: $tinySize;
         text-align: center;
+        margin-bottom: 30px;
     }
 
     .footerContact{
         width: 50%;
+        margin-top: 60px;
     }
 
     ul{

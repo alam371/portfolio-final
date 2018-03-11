@@ -1,4 +1,8 @@
 // ABOUT CONTAINER
+.mainGiantContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
 .aboutContainer{
     padding-top: 100px;
     max-width: 600px;
@@ -26,7 +30,6 @@
 section.separationContainer{
     display: flex;
     justify-content: center;
-    border: 1px solid green;
 }
 
 .buttonBox{
@@ -92,48 +95,104 @@ button::before, button::after {
 // PORTFOLIO AND PROJECT CONTAINER
 .projectContainer{
     max-width: 50%;
-    border: 1px solid $firstColor;
+    // border: 1px solid $firstColor;
+}
+
+section.vertLine1,
+section.vertLine2,
+section.vertLine3{
+     border-left: 1px solid $firstColor;
+}
+
+.asideBox{
+    width: 50%;
+    height: 870px;
+    .numLeft h2{
+        font-size: $biggestSize;
+        font-family: $baseFont;
+        text-align: right;
+        padding-right: 60px;
+        margin-top: 10px;
+    }
+
+    .numRight h2{
+        font-size: $biggestSize;
+        font-family: $baseFont;
+        text-align: left;
+        padding-left: 60px;
+        margin-top: 10px;
+    }
+
 }
 
 .projectContainer .projectBox{
-    width: 650px;
-    height: 400px;
-    border: 1px solid green;
+    max-width: 470px;
     margin: 15px auto;
+    border: 8px solid $fourthColor;
 }
 
-.projectBox span{
+.spanContainer{
+    margin-left: 35px;
+}
+.projectContainer span{
     font-size: $tinySize;
     border: 1px solid $fourthColor;
     padding: 5px 35px;
+    margin-top: 30px;
 }
 
-.projectBox p{
-        font-family: $secondFont;
-        font-size: $regularSize;
-        margin-top: 45px; 
+.projectContainer h3{
+        font-family: $baseFont;
+        font-size: $bigSize;
+        margin-top: 40px; 
+        padding: 0px 30px;
     }
 
+.projectContainer p{
+        font-family: $secondFont;
+        font-size: $regularSize;
+        margin-top: 40px; 
+        padding: 0px 30px;
+    }
 
+.projectContainer button{
+    margin-left: 15px;
+}
+
+
+// Skill Button
+.skillButton{
+    display: flex;
+    justify-content: center;
+}
+.skillButton button{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
 // Skills Container
 .skillContainer{
     display: flex;
+    flex-wrap: wrap;
 }
 .curSkillContainer{
+    margin-bottom: 50px;
     p{
         font-size: $regularSize;
     }
+
     i{
-        font-size: 85px;
+        font-size: 75px;
         color: $tenthColor;
-        padding: 10px 25px;
+        padding: 15px 25px;
     }
 }
 
 .learnContainer{
-    border-left: 1px solid $firstColor;
+    margin: 0 auto;
     p{
         font-size: $regularSize;
+        text-align: center;
     }
     i{
         font-size: 85px;
@@ -143,6 +202,7 @@ button::before, button::after {
 }
 
 .contactContainer{
+    padding: 60px 0px;
     h2{
         font-size: $bigSize;
         text-align: center;
