@@ -96,7 +96,7 @@ button::before, button::after {
 }
 // PORTFOLIO AND PROJECT CONTAINER
 .projectContainer{
-    max-width: 50%;
+   width: 50%;
     // border: 1px solid $firstColor;
 }
 
@@ -108,7 +108,17 @@ section.vertLine3{
 
 .asideBox{
     width: 50%;
-    height: 870px;
+    height: 575px;
+    .numRight,
+    .numLeft{
+        padding: 18px;
+    }
+    h3{
+        font-family: $baseFont;
+        font-size: $bigSize;
+        margin-top: 40px;
+        // padding: 0px 30px;
+    }
     .numLeft h2{
         font-size: $biggestSize;
         font-family: $baseFont;
@@ -121,16 +131,15 @@ section.vertLine3{
         font-size: $biggestSize;
         font-family: $baseFont;
         text-align: left;
-        padding-left: 60px;
+        padding-left: 50px;
         margin-top: 10px;
     }
-
 }
 
 .projectContainer .projectBox{
     max-width: 470px;
     margin: 15px auto;
-    border: 8px solid $fourthColor;
+    // border: 8px solid $fourthColor;
 }
 
 .spanContainer{
@@ -143,12 +152,12 @@ section.vertLine3{
     margin-top: 30px;
 }
 
-.projectContainer h3{
-        font-family: $baseFont;
-        font-size: $bigSize;
-        margin-top: 40px; 
-        padding: 0px 30px;
-    }
+// .projectContainer h3{
+//         font-family: $baseFont;
+//         font-size: $bigSize;
+//         margin-top: 40px; 
+//         padding: 0px 30px;
+//     }
 
 .projectContainer p{
         font-family: $secondFont;
@@ -215,8 +224,17 @@ section.vertLine3{
         color: $fourthColor;
         padding: 10px 25px;
     }
-    p{
+    .contactBox{
+        display: flex;
+        justify-content: center;
+    }
+    a{
+        display: flex;
         font-size: $regularSize;
-        text-align: center;
+        text-decoration: none;
+        color: $ninethColor;
+    }
+    a:hover{
+        color: $fourthColor;
     }
 }
