@@ -1,8 +1,8 @@
 @media (max-width:1120px){
-    .fa-linkedin-in,
-    .fa-twitter,
-    .fa-medium,
-    .fa-github{
+    .headerBar .fa-linkedin-in,
+    .headerBar .fa-twitter,
+    .headerBar .fa-medium,
+    .headerBar .fa-github{
         display:none;
     }
     .headerLogo{
@@ -33,7 +33,8 @@
         text-align: center;
     }
 
-    .asideBox .numRight h3{
+    .asideBox .numRight h3,
+    .asideBox .numRight{
         text-align: center;
     }
 
@@ -76,7 +77,22 @@
     .wrapper{
         max-width: 100%;
     }
+
+    .footerContact nav{
+        display: flex;
+    }
+
+    footer ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul li{
+        margin-bottom: 15px;
+    }
+
 }
+
 
 @media (max-width: 620px){
     .heroText h1{
@@ -102,5 +118,24 @@
 @media (max-width: 500px){
     .aboutContainer{
         max-width: 400px;
+    }
+}
+
+@media (max-width: 480px){
+    .asideBox{
+        height: 400px;
+    }
+    
+    button.draw{
+        margin-top: 20px;
+    }
+    .curSkillContainer{
+        margin: 0px;
+    }
+    .curSkillContainer i{
+        padding: 20px;
+    }
+    .learnContainer i{
+        padding: 0px;
     }
 }
