@@ -31,6 +31,7 @@
     }
     .asideBox .numLeft h2{
         text-align: center;
+        font-size: 36px;
     }
 
     .asideBox .numRight h3,
@@ -40,6 +41,7 @@
 
     .asideBox .numRight h2{
         text-align: center;
+        font-size: 36px;
     }
     
     .spanContainer{
@@ -68,9 +70,10 @@
         flex-direction: column-reverse;
     }
 
-    .projectContainer p{
-        text-align: center;
-    }
+    .projectContainer p {
+    text-align: left;
+    line-height: 1.4;
+}
 }
 
 @media (max-width: 800px){
@@ -89,6 +92,10 @@
 
     footer ul li{
         margin-bottom: 15px;
+    }
+    
+    .projectContainer p{
+        padding: 0px;
     }
 
 }
@@ -137,5 +144,12 @@
     }
     .learnContainer i{
         padding: 0px;
+    }
+}
+
+@media (max-width: 410px){
+    .curSkillContainer{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
