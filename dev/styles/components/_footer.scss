@@ -43,10 +43,26 @@ footer{
         width: calc(100% / 4);
         justify-content: center;
     }
+
+    li a:hover,
+    li a:focus{
+        color: $ninethColor;
+    }
     
     a{
         text-decoration: none;
         color:$eighthColor;
+    }
+
+    .fa-linkedin-in:hover,
+    .fa-twitter:hover,
+    .fa-medium:hover,
+    .fa-github:hover,
+    .fa-linkedin-in:focus,
+    .fa-twitter:focus,
+    .fa-medium:focus,
+    .fa-github:focus{
+        color: $ninethColor;
     }
 
 }

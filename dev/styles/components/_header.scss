@@ -22,9 +22,9 @@ section.heroContainer{
     display: flex;
 
     .headerLogo{
-        width: 65px;
-        height: 65px;
-        // margin-left: 40px;
+        width: 55px;
+        height: 55px;
+        padding-top: 5px;
     }
     
     p{
@@ -52,6 +52,12 @@ section.heroContainer{
         width: calc(100% / 4);
         margin: 0px 17px;
     }
+
+    li a:hover,
+    li a:focus{
+        color: $fourthColor;
+    }
+
     .fa-linkedin-in,
     .fa-twitter,
     .fa-medium,
@@ -61,6 +67,18 @@ section.heroContainer{
         margin-left: 15px;
         margin-right: 15px;
     }
+
+    .fa-linkedin-in:hover,
+    .fa-twitter:hover,
+    .fa-medium:hover,
+    .fa-github:hover,
+    .fa-linkedin-in:focus,
+    .fa-twitter:focus,
+    .fa-medium:focus,
+    .fa-github:focus{
+        color: $fourthColor;
+    }
+
     a{
         text-decoration: none;
         color: $eighthColor;
@@ -89,44 +107,3 @@ section.heroContainer{
         color: $eighthColor;
     }
 }
-
-// Hamburger
-.hamburger{
-	    height: 40px;
-	    width: 40px;
-	    position: relative;
-	    background: black;
-	}
-
-	.hamburger.close .line1{
-	    transform: rotate(45deg);
-	    top: 45%;
-	}
-
-	.hamburger.close .line2, 
-	.hamburger.close .line3{
-	    transform: rotate(-45deg);
-	    top: 45%;
-	}
-
-	.line{
-	    background: white;
-	    height: 2px;
-	    width: 100%;
-	    border-radius: 8px;
-	    position: absolute;
-	    transition: all cubic-bezier(0.36, 0.21, 0.63, 1.53) 0.27s;
-	}
-
-	.line1{
-	    top: 19%;
-	}
-
-	.line2{
-	    top: 49%;
-	}
-
-	.line3{
-	    top: 79%;
-	}
-

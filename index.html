@@ -6,15 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,800|Roboto:300" rel="stylesheet">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 <body>
 	<header>
 		<section class="heroContainer">
-			<div class="headerBarContainer">
-				<div class="headerBarBox">
+			<div class="headerBarContainer ">
+				<div class="headerBarBox wrapper">
 					<div class="headerBar">
 						<div class="headerLogo">
 							<!-- <img src="assets/angelineLogo1-white.png" alt=""> -->
@@ -22,216 +21,208 @@
 						</div>
 					</div>
 					<div class="headerBar">
-						<nav>
-							<ul>
+						<nav role="navigation">
+							<ul id="menu">
 								<li>
 									<a href="#portfolio">Portfolio
 									</li></a>
-								<li>
-									<a href="#skills">Skills</a>
-								</li>
-								<li>
-									<a href="#about">About</a>
-								</li>
-								<li>
-									<a href="#contact">Contact</a>
-								</li>
-							</ul>
-						</nav>
+									<li>
+										<a href="#skills">Skills</a>
+									</li>
+									<li>
+										<a href="#about">About</a>
+									</li>
+									<li>
+										<a href="#contact">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="headerBar">
+							<a href="https://www.linkedin.com/in/angeline-lam-490398b/"><i class="fab fa-linkedin-in"></i></a>
+							<a href="https://twitter.com/AngelineLam"><i class="fab fa-twitter"></i></a>
+							<a href="https://medium.com/@lam.angeline"><i class="fab fa-medium"></i></a>
+							<a href="https://medium.com/@lam.angeline"><i class="fab fa-github"></i></a>
+						</div>
 					</div>
-					<div class="headerBar">
-						<a href="https://www.linkedin.com/in/angeline-lam-490398b/"><i class="fab fa-linkedin-in"></i></a>
-						<a href="https://twitter.com/AngelineLam"><i class="fab fa-twitter"></i></a>
-						<a href="https://medium.com/@lam.angeline"><i class="fab fa-medium"></i></a>
-						<a href=""><i class="fab fa-github"></i></a>
-					</div>
 				</div>
-			</div>
-
-			<div class="heroText wrapper">
-				<h1>Angeline Lam</h1>
-				<h2>Front-End Web Developer</h2>
-			</div>
-		</section>
-	
-		
-	</header>
-	<main>
-		<section id="about" class="aboutContainer wrapper">
-			<h2>About</h2>
-			<h3>To create something exceptional, your mindset must be relentlessly focused on the smallest detail.</h3>
-			<p>I'm a Toronto based front-end developer. Prior to becoming a front-end developer, I was a fashion designer where I excelled in garment finishing details to construct beautiful designs. My love and knowledge of design empowers me to build amazing web experiences and apps.
-			</p>
-			<p>When I'm not coding, you can find me training for half-marathons, reading the New Yorker and taking photos of our amazing city.</p>
-		</section>
-
-		<section class="separationContainer wrapper">
-			<div class="buttonBox">
-				<button id="portfolio" class="draw">My Portfolio</button>
-			</div>
-		</section>
-
-		<div class="mainGiantContainer wrapper">
-		<section class="asideBox">
-			<div class="numLeft">
-				<h2>01</h2>
-				<h3>SpaceX Launch Tracker - React App</h3>
-				<button class="draw">
-					<a href="">View Live</a>
-				</button>
-				<button class="draw">
-					<a href="">View On Github</a>
-				</button>
-			</div>
-		</section>
-		<section class="projectContainer vertLine1">
-				<div class="projectBox">
-					<img src="assets/spaceX-desktop.png" alt="">
+				
+				<div class="heroText wrapper">
+					<h1>Angeline Lam</h1>
+					<h2>Front-End Web Developer</h2>
 				</div>
-				<div class="spanContainer">
-				<span>React</span>
-				<span>HTML</span>
-				<span>CSS</span>
-				<span>Gulp</span>
+			</section>
+			
+			
+		</header>
+		<main>
+			<section id="about" class="aboutContainer">
+				<h2>About</h2>
+				<h3>To create something exceptional, your mindset must be relentlessly focused on the smallest detail.</h3>
+				<p>I'm a Toronto based front-end developer. Prior to becoming a front-end developer, I was a fashion designer where I excelled in creating garment details. My love and knowledge of design and code empowers me to build amazing web experiences and apps.
+				</p>
+				<p>When I'm not coding, you can find me training for half-marathons, reading the New Yorker and taking photos of our amazing city.</p>
+			</section>
+			
+			<section class="separationContainer">
+				<div class="portfolioText">
+					<h2>My Portfolio</h2>
 				</div>
-				<p>A client geared project using React, SpaceX API and Google Map API, to inform upcoming and past rocket launches by the SpaceX program.</p>
-		</section>
-
-		<section class="projectContainer">
-			<div class="projectBox">
-				<img src="assets/advisory-desktop.png" alt="">
-			</div>
-			<div class="spanContainer">
-				<span>HTML</span>
-				<span>CSS</span>
-				<span>Sass</span>
-			</div>
-			<p>A fully responsive website based on a PSD mockup</p>
-		</section>
-		
-		<section class="asideBox vertLine2">
-			<div class="numRight">
-				<h2>02</h2>
-				<h3>Advisory - PSD to Responsive Site</h3>
-				<button class="draw"><a href="">View Live</a></button>
-				<button class="draw"><a href="">View On Github</a></button>
-			</div>
-		</section>
-
-		<section class="asideBox">
-			<div class="numLeft">
-				<h2>03</h2>
-				<h3>Midnight Pop Quiz - React App</h3>
-				<button class="draw">
-					<a href="">View Live</a>
-				</button>
-				<button class="draw">
-					<a href="">View On Github</a>
-				</button>
-			</div>
-		</section>
-
-		<!-- <section class="projectContainer">
-			<p>Pill Minder - React Application</p>
-			<div class="projectBox">
-				<img src="" alt="">
-			</div>
-			<div class="spanContainer">
-				<span>React</span>
-				<span>Firebase</span>
-				<span>HTML</span>
-				<span>CSS</span>
-			</div>
-			<p>A medicine tracker App created in React.</p>
-			<button>View Live</button>
-			<button>View On Github</button>
-		</section> -->
-		<section class="projectContainer vertLine3">
-			<div class="projectBox">
-				<img src="assets/really-hungry-desktop.png" alt="">
-			</div>
-			<div class="spanContainer">
-				<span>jQuery</span>
-				<span>JavaScript</span>
-				<span>HTML</span>
-				<span>CSS</span>
-			</div>
-			<p>A playful late night food quiz created with jQuery</p>
-		</section>
-		</div>		
-
-		<div id="skills" class="skillButton wrapper">
-			<button class="draw">Current Skills</button>
-		</div>
-
-		<section class="skillContainer wrapper">
-			<div>
-				<div class="curSkillContainer">
-					<i class="devicon-html5-plain devicon"></i>
-					<i class="devicon-sass-original devicon"></i>
-					<i class="devicon-css3-plain devicon"></i>
-					<i class="devicon-javascript-plain devicon"></i>
-					<i class="devicon-jquery-plain devicon"></i>
-					<i class="devicon-react-original devicon"></i>
-					<i class="devicon-gulp-plain devicon"></i>
-					<i class="devicon-github-plain devicon"></i>
+			</section>
+			
+			<div class="mainGiantContainer wrapper">
+				<div class="containerForMobile1">
+					<section class="asideBox">
+						<div class="numLeft">
+							<h2>01</h2>
+							<h3>SpaceX Launch Tracker - React App</h3>
+							<button class="draw">
+								<a href="">View Live</a>
+							</button>
+							<button class="draw">
+								<a href="">View On Github</a>
+							</button>
+						</div>
+					</section>
+					<section class="projectContainer vertLine1">
+						<div class="projectBox">
+							<img src="assets/spaceX-desktop.png" alt="">
+						</div>
+						<div class="spanContainer">
+							<span>React</span>
+							<span>HTML</span>
+							<span>CSS</span>
+							<span>Gulp</span>
+						</div>
+						<p>A client geared project using React, SpaceX API and Google Map API, to inform upcoming and past rocket launches by the SpaceX program.</p>
+					</section>
 				</div>
+				
+				<div class="containerForMobile2">
+					<section class="projectContainer">
+						<div class="projectBox">
+							<img src="assets/advisory-desktop.png" alt="">
+						</div>
+						<div class="spanContainer">
+							<span>HTML</span>
+							<span>CSS</span>
+							<span>Sass</span>
+						</div>
+						<p>A fully responsive website based on a PSD mockup</p>
+					</section>
+					
+					<section class="asideBox vertLine2">
+						<div class="numRight">
+							<h2>02</h2>
+							<h3>Advisory - PSD to Responsive Site</h3>
+							<button class="draw"><a href="">View Live</a></button>
+							<button class="draw"><a href="">View On Github</a></button>
+						</div>
+					</section>
+				</div>
+
+				<div class="containerForMobile1">
+					<section class="asideBox">
+						<div class="numLeft">
+							<h2>03</h2>
+							<h3>Midnight Pop Quiz - React App</h3>
+							<button class="draw">
+								<a href="">View Live</a>
+							</button>
+							<button class="draw">
+								<a href="">View On Github</a>
+							</button>
+						</div>
+					</section>
+					
+					<section class="projectContainer vertLine3">
+						<div class="projectBox">
+							<img src="assets/really-hungry-desktop.png" alt="">
+						</div>
+						<div class="spanContainer">
+							<span>jQuery</span>
+							<span>JavaScript</span>
+							<span>HTML</span>
+							<span>CSS</span>
+						</div>
+						<p>A playful late night food quiz created with jQuery</p>
+					</section>
+				</div>
+			</div>		
+			
+			<div id="skills" class="skillButton wrapper">
+				<h2>Current Skills</h2>
 			</div>
-			<div class="learnContainer">
+			
+			<section class="skillContainer wrapper">
 				<div>
-					<p>Interested & Working On</p>
-					<i class="devicon-wordpress-plain"></i>
-					<i class="devicon-bootstrap-plain"></i>
-					<i class="devicon-python-plain"></i>
-					<i class="devicon-linux-plain"></i>
+					<div class="curSkillContainer">
+						<i class="devicon-html5-plain devicon"></i>
+						<i class="devicon-sass-original devicon"></i>
+						<i class="devicon-css3-plain devicon"></i>
+						<i class="devicon-javascript-plain devicon"></i>
+						<i class="devicon-jquery-plain devicon"></i>
+						<i class="devicon-react-original devicon"></i>
+						<i class="devicon-gulp-plain devicon"></i>
+						<i class="devicon-github-plain devicon"></i>
+					</div>
 				</div>
+				<div class="learnContainer">
+					<div>
+						<p>Interested & Working On</p>
+						<i class="devicon-wordpress-plain"></i>
+						<i class="devicon-bootstrap-plain"></i>
+						<i class="devicon-python-plain"></i>
+						<i class="devicon-linux-plain"></i>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="contactContainer wrapper">
+				<h2>Let's talk!</h2>
+				<div class="contactBox wrapper">
+					<a href="mailto:hello@angelinelam.com">hello@angelinelam.com</a>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div	class="footerContact wrapper">
+				<nav>
+					<ul>
+						<li>
+							<a href="#portfolio">Portfolio
+							</li>
+						</a>
+						<li>
+							<a href="#skills">Skills</a>
+						</li>
+						<li>
+							<a href="#about">About</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-		</section>
-		<section id="contact" class="contactContainer wrapper">
-			<h2>Let's talk!</h2>
-			<div class="contactBox wrapper">
-				<a href="mailto:hello@angelinelam.com">hello@angelinelam.com</a>
+			<div class="footerIcon">
+				<a href="https://www.linkedin.com/in/angeline-lam-490398b/">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+				<a href="https://twitter.com/AngelineLam">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="https://medium.com/@lam.angeline">
+					<i class="fab fa-medium"></i>
+				</a>
+				<a href="https://medium.com/@lam.angeline">
+					<i class="fab fa-github"></i>
+				</a>
 			</div>
-		</section>
-	</main>
-	<footer>
-		<div	class="footerContact wrapper">
-			<nav>
-				<ul>
-					<li>
-						<a href="#portfolio">Portfolio
-					</li>
-					</a>
-					<li>
-						<a href="#skills">Skills</a>
-					</li>
-					<li>
-						<a href="#about">About</a>
-					</li>
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<div class="footerIcon">
-			<a href="https://www.linkedin.com/in/angeline-lam-490398b/">
-				<i class="fab fa-linkedin-in"></i>
-			</a>
-			<a href="https://twitter.com/AngelineLam">
-				<i class="fab fa-twitter"></i>
-			</a>
-			<a href="https://medium.com/@lam.angeline">
-				<i class="fab fa-medium"></i>
-			</a>
-			<a href="">
-				<i class="fab fa-github"></i>
-			</a>
-		</div>
-		<div>
-			<p class="copyright">© Copyright Angeline Lam 2018 | All Rights Reserved.</p>
-		</div>
-	</footer>	
+			<div>
+				<p class="copyright">© Copyright Angeline Lam 2018 | All Rights Reserved.</p>
+			</div>
+		</footer>	
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src="/public/scripts/app.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	

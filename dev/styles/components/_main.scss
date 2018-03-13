@@ -5,8 +5,9 @@
 }
 
 .aboutContainer{
-    padding-top: 100px;
+    padding: 40px;
     max-width: 600px;
+    margin: 0 auto;
     h2{
         font-size: $bigSize;
         text-align: center;
@@ -34,18 +35,27 @@ section.separationContainer{
     justify-content: center;
 }
 
-.buttonBox{
+.portfolioText{
     display: flex;
 }
+.portfolioText h2{
+    font-size: $bigSize;
+    color: $ninethColor;
+    text-align: center;
+    border-bottom: 1px solid $firstColor;
+    padding-bottom: 45px;
+}
+
 
 button{
+    outline: none;
     margin-top: 40px;
     background: none;
     border: 0;
     /* === creating a box container the same size as the button === */
     box-sizing: border-box;
     // margin: 45px;
-    padding: 16px 65px;
+    padding: 10px 45px;
     /* === this is a box with a box shadow around it === */
     box-shadow: inset 0 0 0 1px $firstColor;
     color:$ninethColor;
@@ -95,9 +105,16 @@ button::before, button::after {
     transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 // PORTFOLIO AND PROJECT CONTAINER
+.containerForMobile1{
+    display: flex;
+}
+
+.containerForMobile2{
+    display: flex;
+}
 .projectContainer{
    width: 50%;
-    // border: 1px solid $firstColor;
+   padding-right: 48px;
 }
 
 section.vertLine1,
@@ -113,51 +130,52 @@ section.vertLine3{
     .numLeft{
         padding: 18px;
     }
-    h3{
-        font-family: $baseFont;
-        font-size: $bigSize;
-        margin-top: 40px;
-        // padding: 0px 30px;
-    }
     .numLeft h2{
         font-size: $biggestSize;
         font-family: $baseFont;
+        font-weight: 400;
         text-align: right;
-        padding-right: 60px;
         margin-top: 10px;
     }
-
+    
+    .numLeft h3{
+        font-family: $baseFont;
+        font-weight: 400;
+        font-size: $bigSize;
+        margin-top: 40px;
+        text-align: right;
+        // padding: 0px 30px;
+    }
     .numRight h2{
         font-size: $biggestSize;
         font-family: $baseFont;
+        font-weight: 400;
         text-align: left;
-        padding-left: 50px;
         margin-top: 10px;
+    }
+    .numRight h3{
+        font-family: $baseFont;
+        font-weight: 400;
+        font-size: $bigSize;
+        margin-top: 40px;
     }
 }
 
-.projectContainer .projectBox{
-    max-width: 470px;
-    margin: 15px auto;
-    // border: 8px solid $fourthColor;
+.projectBox{
+    width: 100%;
 }
 
 .spanContainer{
-    margin-left: 35px;
-}
-.projectContainer span{
-    font-size: $tinySize;
-    border: 1px solid $fourthColor;
-    padding: 5px 35px;
-    margin-top: 30px;
+    padding: 10px; 
 }
 
-// .projectContainer h3{
-//         font-family: $baseFont;
-//         font-size: $bigSize;
-//         margin-top: 40px; 
-//         padding: 0px 30px;
-//     }
+.spanContainer span{
+        font-size: $tinySize;
+        border: 1px solid $fourthColor;
+        padding: 5px 35px;
+        margin-top:10px;
+        display: inline-block;
+}
 
 .projectContainer p{
         font-family: $secondFont;
@@ -166,8 +184,10 @@ section.vertLine3{
         padding: 0px 30px;
     }
 
-.projectContainer button{
-    margin-left: 15px;
+.asideBox button{
+    a{
+        text-decoration: none;
+    }
 }
 
 
@@ -176,24 +196,28 @@ section.vertLine3{
     display: flex;
     justify-content: center;
 }
-.skillButton button{
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 100px;
+.skillButton h2{
+    font-size: $bigSize;
+    color: $ninethColor;
+    text-align: center;
+    border-bottom: 1px solid $firstColor;
+    padding-bottom: 45px;
 }
 // Skills Container
 .skillContainer{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .curSkillContainer{
-    margin-bottom: 50px;
+    margin: 50px 0px;
     p{
         font-size: $regularSize;
+        
     }
 
     i{
-        font-size: 75px;
+        font-size: 60px;
         color: $tenthColor;
         padding: 15px 25px;
     }
@@ -204,9 +228,10 @@ section.vertLine3{
     p{
         font-size: $regularSize;
         text-align: center;
+        margin-bottom: 55px;
     }
     i{
-        font-size: 85px;
+        font-size: 60px;
         color: $tenthColor;
         padding: 10px 25px;
     }
@@ -216,8 +241,11 @@ section.vertLine3{
     padding: 60px 0px;
     h2{
         font-size: $bigSize;
+        color: $ninethColor;
         text-align: center;
         // border-bottom: 1px solid $firstColor;
+        padding-bottom: 45px;
+        
     }
     .fa-envelope {
         font-size: 85px;

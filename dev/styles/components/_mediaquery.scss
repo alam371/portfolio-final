@@ -1,0 +1,106 @@
+@media (max-width:1120px){
+    .fa-linkedin-in,
+    .fa-twitter,
+    .fa-medium,
+    .fa-github{
+        display:none;
+    }
+    .headerLogo{
+        display: none;
+    }
+    .headerBar nav{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .headerBarBox.wrapper{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1080px){
+    .wrapper{
+        max-width: 100%;
+    }
+    section.vertLine1,
+    section.vertLine2,
+    section.vertLine3{
+     border-left: none;
+    }
+    .asideBox .numLeft h3{
+        text-align: center;
+    }
+    .asideBox .numLeft h2{
+        text-align: center;
+    }
+
+    .asideBox .numRight h3{
+        text-align: center;
+    }
+
+    .asideBox .numRight h2{
+        text-align: center;
+    }
+    
+    .spanContainer{
+        text-align: center;
+    }
+
+    .projectContainer{
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .asideBox{
+       width: 100%;
+       height: 300px;
+       .numLeft{
+           text-align: center;
+       }
+    }
+
+    .containerForMobile1{
+        flex-direction: column;
+    }
+
+    .containerForMobile2{
+        flex-direction: column-reverse;
+    }
+
+    .projectContainer p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px){
+    .wrapper{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 620px){
+    .heroText h1{
+        font-size: 63px;
+    }
+    .heroText h2{
+        font-size: 24px;
+    }
+    .aboutContainer{
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 560px){
+    .heroText h1{
+        font-size: 57px;
+    }
+    .heroText h2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px){
+    .aboutContainer{
+        max-width: 400px;
+    }
+}
