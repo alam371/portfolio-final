@@ -73,7 +73,19 @@
     .projectContainer p {
     text-align: left;
     line-height: 1.4;
+    }
+
+    // .curSkillContainer i{
+    //     display: inline-block;
+    // }
 }
+
+@media(max-width: 900px){
+    .curSkillContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
 
 @media (max-width: 800px){
@@ -120,6 +132,7 @@
     .heroText h2{
         font-size: 18px;
     }
+
 }
 
 @media (max-width: 500px){
@@ -136,12 +149,6 @@
     button.draw{
         margin-top: 20px;
     }
-    .curSkillContainer{
-        margin: 0px;
-    }
-    .curSkillContainer i{
-        padding: 20px;
-    }
     .learnContainer i{
         padding: 0px;
     }
@@ -151,5 +158,28 @@
     .curSkillContainer{
         display: flex;
         flex-wrap: wrap;
+        }  
+    .headerBar ul li {
+        font-size: 18px;
+    } 
+}
+
+@media (max-width: 380px){
+    .headerBar ul li {
+        font-size: 16px;
+    } 
+
+    .heroText h1{
+        font-size: 53px;
+    }
+}
+
+@media (max-width: 345px){
+    .headerBar ul li {
+        font-size: 15px;
+    } 
+
+    .heroText h1{
+        font-size: 48px;
     }
 }
